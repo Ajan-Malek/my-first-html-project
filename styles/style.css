@@ -1,0 +1,279 @@
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f1ea;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #0FA4AF;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    margin: 8px 0 0;
+    font-style: italic;
+    color: #fff7c2;
+}
+
+/* Navigation */
+nav {
+    background-color: #024950;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    margin: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffe082;
+    text-decoration: underline;
+}
+
+/* Main content and section cards */
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+/* Personal information */
+.about-section {
+    border-left: 6px solid #e53935;
+}
+
+.about-section h2,
+.about-section h3 {
+    color: #c62828;
+}
+
+.personal-intro {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.personal-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-figure {
+    width: 25%;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile-figure figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border: 1px solid #777;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #777;
+    padding: 9px;
+    text-align: left;
+}
+
+.personal-table {
+    width: 70%;
+    background-color: #fdfdfd;
+}
+
+.personal-table th {
+    width: 35%;
+    background-color: #e8f6f7;
+}
+
+/* Education section */
+.education-section {
+    border-left: 6px solid #1b63e9;
+}
+
+.education-section h2 {
+    color: #1b63e9;
+}
+
+.education-table th {
+    background-color: #1b63e9;
+    color: white;
+}
+
+.education-table td {
+    text-align: center;
+}
+
+/* Hobbies section */
+.hobbies-section {
+    border-left: 6px solid #1a7e0d;
+}
+
+.hobbies-section h2 {
+    color: #1a7e0d;
+}
+
+.hobbies-section ul {
+    line-height: 1.8;
+    list-style-type: square;
+}
+
+/* Persuasive section */
+.persuasive-section {
+    border-left: 6px solid #ef8c22;
+}
+
+.persuasive-section h2 {
+    color: #b65b00;
+}
+
+/* Family section */
+.family-section {
+    border-left: 6px solid #d6b900;
+}
+
+.family-section h2 {
+    color: #8a7400;
+}
+
+.family-table {
+    width: 100%;
+}
+
+.family-table th {
+    background-color: #f3df75;
+    color: #222;
+}
+
+/* Quotes and supplementary note */
+.quotes-section {
+    border-left: 6px solid #7954a1;
+}
+
+.quotes-section h2 {
+    color: #7954a1;
+}
+
+blockquote {
+    margin: 18px 0;
+    padding: 14px 18px;
+    background-color: #f4f0f8;
+    border-left: 5px solid #7954a1;
+    font-style: italic;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.note-section {
+    background-color: #eef8f8;
+}
+
+/* Footer */
+footer {
+    background-color: #0FA4AF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        margin: 5px 8px;
+    }
+
+    .personal-details {
+        flex-direction: column;
+    }
+
+    .personal-table,
+    .profile-figure {
+        width: 100%;
+    }
+
+    .profile-photo {
+        width: 40%;
+    }
+
+    .education-table {
+        font-size: 12px;
+    }
+
+    td,
+    th {
+        padding: 6px;
+    }
+}
